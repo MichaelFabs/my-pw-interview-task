@@ -1,0 +1,25 @@
+{
+  "name": "playwright-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "test": "playwright test",
+  "test:api": "playwright test tests/api",
+  "test:ui": "playwright test tests/ui --project=chromium",
+  "test:firefox": "playwright test tests/ui --project=firefox",
+  "test:webkit": "playwright test tests/ui --project=webkit",
+  "test:headed": "playwright test --headed",
+  "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.65.0"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10"
+  }
+}
